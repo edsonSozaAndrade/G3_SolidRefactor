@@ -185,7 +185,7 @@ public class GildedRoseTest {
     GildedRose.items.add(item);
     GildedRose.updateQuality();
 
-    int expectedQuality = inputQuality - 2;
+    int expectedQuality = inputQuality - 4;
 
     assertEquals(expectedQuality, item.getQuality());
   }
@@ -199,7 +199,7 @@ public class GildedRoseTest {
     GildedRose.items.add(item);
     GildedRose.updateQuality();
 
-    int expectedQuality = 1;
+    int expectedQuality = 0;
 
     assertEquals(expectedQuality, item.getQuality());
   }

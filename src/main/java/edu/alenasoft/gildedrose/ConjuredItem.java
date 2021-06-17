@@ -7,7 +7,10 @@ public class ConjuredItem extends Item{
 
     @Override
     public void UpdateQuality() {
-        this.setQuality(this.getQuality()-2);
+        if (this.getSellIn() <= 0)
+            this.setQuality(this.getQuality() - 4);
+        else
+            this.setQuality(this.getQuality() - 2);
         this.setQuality(ItemUtils.VerifyQualityConditions(this.getQuality()));
     }
 }
