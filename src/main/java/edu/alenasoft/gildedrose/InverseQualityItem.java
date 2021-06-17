@@ -28,30 +28,30 @@ public class InverseQualityItem extends Item{
         this.setQuality(ItemUtils.VerifyQualityConditions(this.getQuality()));
     }
 
-    private boolean IsExpired()
-    {
-        if (this.getSellIn() == 0) {
-            this.setQuality(0);
-            return true;
-        }
-        return false;
-    }
-
-    private boolean IsLessThan5Days()
-    {
-        if (this.getSellIn() > 0 && this.getSellIn() <= 5) {
-            this.setQuality(this.getQuality() + 3);
-            return true;
-        }
-        return false;
-    }
-
-    private boolean IsLessThan10Days()
-    {
-        if (this.getSellIn()>5 && this.getSellIn() <= 10) {
-            this.setQuality(this.getQuality() + 2);
-            return true;
-        }
-        return false;
-    }
+//    private boolean IsExpired()
+//    {
+//        if (this.getSellIn() == 0) {
+//            this.setQuality(0);
+//            return true;
+//        }
+//        return false;
+//    }
+//
+//    private boolean IsLessThan5Days()
+//    {
+//        if (this.getSellIn() > 0 && this.getSellIn() <= 5) {
+//            this.setQuality(this.getQuality() + 3);
+//            return true;
+//        }
+//        return false;
+//    }
+//
+//    private boolean IsLessThan10Days()
+//    {
+//        if (this.getSellIn()>5 && this.getSellIn() <= 10) {
+//            this.setQuality(this.getQuality() + 2);
+//            return true;
+//        }
+//        return false;
+//    }
 }
